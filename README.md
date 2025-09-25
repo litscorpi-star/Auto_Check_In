@@ -5,7 +5,12 @@
  * @FilePath: \Auto_Check_In\README.md
  * @Description  :
 -->
-
+# Add workflows
+- 添加run.yaml文件，执行夸克签到
+- 设置参数：COOKIE_QUARK，QYWX_AM
+- 运行测试
+- 成功截图
+  ![image](https://im.litscorpi.top/1758827098023.png)
 # Auto_Check_In
 
 > 每日自动签到集合
