@@ -27,6 +27,4 @@ jobs:
       run: python checkIn_Quark.py
       env:
         COOKIE_QUARK: ${{ secrets.COOKIE_QUARK }}
-        WECHAT_ID: ${{ secrets.WECHAT_ID }}
-        WECHAT_SECRET: ${{ secrets.WECHAT_SECRET }}
-        WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+        QYWX_AM: ${{ secrets.QYWX_AM }}
