@@ -198,6 +198,29 @@ def extract_params(url):
         'vcode': params.get('vcode', '')
     }
 
+def split_at_even_newlines(text):
+    """
+    按偶数位置的'/n'分割字符串
+    参数:
+        text: 包含多个'/n'的字符串
+    返回:
+        分割后的字符串列表
+    """
+    parts = text.split('/n')
+    result = []
+    current_chunk = []
+    
+    for i, part in enumerate(parts):
+        current_chunk.append(part)
+        if i % 2 == 1:  # 遇到偶数索引的/n（从0开始计数）
+            result.append('/n'.join(current_chunk))
+            current_chunk = []
+    
+    # 添加最后未完成的块
+    if current_chunk:
+        result.append('/n'.join(current_chunk))
+    
+    return result
 
 def main():
     '''
@@ -236,7 +259,10 @@ def main():
     # print(msg)
 
     try:
-        send('夸克自动签到', msg)
+        msg_modify = split_at_even_newlines(msg)
+        # send('夸克自动签到', msg)
+        for m in msg_modify:
+            send('夸克自动签到', m)
     except Exception as err:
         print('%s\n❌ 错误，请查看运行日志！' % err)
 
