@@ -94,7 +94,7 @@ class Quark:
             "vcode": self.param.get('vcode')
         }
         response = requests.get(url=url, params=querystring).json()
-        #print(response)
+        print(response)
         if response.get("data"):
             return response["data"]
         else:
