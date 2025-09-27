@@ -214,12 +214,12 @@ def split_at_even_newlines(text):
     for i, part in enumerate(parts):
         current_chunk.append(part)
         if i % 2 == 1:  # 遇到偶数索引的/n（从0开始计数）
-            result.append('/n'.join(current_chunk))
+            result.append('\n'.join(current_chunk))
             current_chunk = []
     
     # 添加最后未完成的块
     if current_chunk:
-        result.append('/n'.join(current_chunk))
+        result.append('\n'.join(current_chunk))
     
     return result
 
