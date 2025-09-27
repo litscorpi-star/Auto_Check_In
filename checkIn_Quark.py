@@ -206,7 +206,8 @@ def split_at_even_newlines(text):
     返回:
         分割后的字符串列表
     """
-    parts = text.split('/n')
+    parts = text.split('\n\n')
+    parts = filter_non_empty(parts)
     result = []
     current_chunk = []
     
@@ -221,6 +222,12 @@ def split_at_even_newlines(text):
         result.append('/n'.join(current_chunk))
     
     return result
+
+def filter_non_empty(arr):
+    """过滤数组中的空字符串"""
+    return [item for item in arr if item != ""]
+
+
 
 def main():
     '''
