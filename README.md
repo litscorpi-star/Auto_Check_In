@@ -13,6 +13,8 @@
 - 成功截图
 
   ![image](https://im.litscorpi.top/1758827098023.png)
+
+- 青龙通知有字数限制，多账号显示不完全。对msg进行了处理，分段输出。
   
 # Auto_Check_In
 
