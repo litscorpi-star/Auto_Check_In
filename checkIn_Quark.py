@@ -94,7 +94,7 @@ class Quark:
             "vcode": self.param.get('vcode')
         }
         response = requests.get(url=url, params=querystring).json()
-        print(response)
+        #print(response)
         if response.get("data"):
             return response["data"]
         else:
@@ -263,7 +263,7 @@ def main():
 
         i += 1
 
-    print(msg)
+    #print(msg)
 
     try:
         msg_modify = split_at_even_newlines(msg)
