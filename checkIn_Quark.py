@@ -260,6 +260,7 @@ def main():
 
     try:
         msg_modify = split_at_even_newlines(msg)
+        print(msg_modify)
         # send('夸克自动签到', msg)
         for m in msg_modify:
             send('夸克自动签到', m)
