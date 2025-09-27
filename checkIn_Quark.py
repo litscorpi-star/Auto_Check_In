@@ -256,7 +256,7 @@ def main():
 
         i += 1
 
-    # print(msg)
+    print(msg)
 
     try:
         msg_modify = split_at_even_newlines(msg)
