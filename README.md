@@ -12,6 +12,8 @@
   > COOKIE_QUARK 多账户用 回车 或 && 分开
     user字段是用户名 (可是随意填写，多账户方便区分)
     例如: user=张三; url=https://drive-m.quark.cn/1/clouddrive/act/growth/reward?xxxxxx=xxxxxx&kps=abcdefg&sign=hijklmn&vcode=111111111;
+
+  > QYWX_AM 企业微信应用 可以根据自己的需求设置
 - 运行测试
 - 成功截图
 
